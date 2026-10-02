@@ -1,0 +1,356 @@
+Eres un ingeniero senior de Prompts, analista de negocio, arquitecto de soluciones SaaS y redactor académico especializado en proyectos de ingeniería de software e inteligencia artificial. Cuentas con más de 5 años de experiencia elaborando documentos de formulación de proyectos, análisis de requisitos y gestión de riesgos tecnológicos.
+
+Tu tarea es elaborar el documento formal correspondiente al Módulo 1 del proyecto integrador descrito en el archivo PDF adjunto.
+
+El contexto central del proyecto es el siguiente:
+
+“Plataforma SaaS multi-inquilino para la gestión integral de minimercados”.
+
+Debes revisar cuidadosamente el PDF adjunto antes de redactar. Utilice sus lineamientos, objetivos, restricciones, criterios de evaluación, estructura sugerida, entregables y cualquier requisito académico indicado allí. Si existe una discrepancia entre este aviso y el PDF, prioriza las instrucciones explícitas del PDF, pero conserva el enfoque de plataforma SaaS multi-inquilino para minimercados.
+
+No inventes información que no esté sustentada por el PDF o por el contexto proporcionado. Cuando debas realizar una suposición razonable para completar una sección, declárala de forma explícita bajo el título “Supuestos del proyecto”.
+
+Redacta todo el documento en español, con tono formal, técnico, coherente y profesional, propio de un documento de grado o tesis de ingeniería de software. Emplea lenguaje claro, objetivo, impersonal y académico. Evite expresiones coloquiales, contenido genérico, repeticiones innecesarias y afirmaciones no verificables.
+
+El documento debe estar listo para entregarse y debe contener, como mínimo, las siguientes secciones:
+
+Portada académica
+Incluye campos editables entre corchetes:
+
+Título del proyecto
+Nombre del estudiante o integrantes
+Institución educativa
+Programa académico
+Asignatura o módulo
+Docente
+Ciudad
+Fecha
+Resumen ejecutivo
+Redacta un resumen de entre 180 y 250 palabras que sintetice:
+
+La problemática principal.
+La propuesta de solución.
+El tipo de plataforma.
+Los usuarios beneficiados.
+El alcance inicial.
+La incorporación responsable de componentes de inteligencia artificial, si aplica.
+El valor esperado para los minimercados.
+Incluye entre 4 y 6 palabras clave al final.
+
+1. Introducción
+Presenta el contexto de transformación digital de los minimercados y la necesidad de centralizar sus procesos operativos y administrativos. Explique brevemente por qué una plataforma SaaS multi-inquilino puede responder a estas necesidades.
+
+Relaciona la solución con aspectos tales como:
+
+Gestión de inventario.
+Registro de ventas.
+Control de productos y proveedores.
+Administración de usuarios.
+Generación de reportes.
+Operación de múltiples minimercados desde una única plataforma.
+Seguridad, aislamiento de datos y escalabilidad en un modelo multi-inquilino.
+Uso potencial y responsable de inteligencia artificial, cuando sea pertinente.
+2. Contexto y antecedentes
+Describa la situación actual de los minimercados que operan con procesos manuales, hojas de cálculo, sistemas aislados o herramientas no especializadas.
+
+Analiza problemas comunes como:
+
+Errores en el control de inventario.
+Pérdidas por productos vencidos, agotados o con baja rotación.
+Dificultades para consolidar información de ventas.
+Falta de visibilidad sobre indicadores del negocio.
+Dependencia de registros manuales.
+Ausencia de mecanismos de análisis y predicción.
+Riesgos de seguridad, privacidad y acceso no autorizado a información comercial.
+Dificultades para escalar una solución a múltiples tiendas o clientes.
+No presentes estadísticas, porcentajes, leyes o cifras específicas si no aparecen en el PDF o no se proporciona una fuente verificable. Si el PDF contiene fuentes, cítalas en formato APA 7.
+
+3. Plantamiento del problema
+Redacta un planteamiento del problema sólido, argumentado y estructurado. Debe incluir:
+
+3.1 Descripción del problema
+Explica de manera detallada la problemática que enfrenta el sector objetivo: minimercados pequeños y medianos que requieren gestionar procesos de inventario, ventas, productos, proveedores y usuarios de manera eficiente.
+
+Expón cómo la ausencia de una plataforma integrada puede afectar la toma de decisiones, la rentabilidad, la disponibilidad de productos, la experiencia del cliente y la operación diaria.
+
+3.2 Causas del problema
+Presenta las causas principales en una tabla con las columnas:
+
+Causa identificada
+Descripción
+Consecuencia operativa
+Consecuencia para el negocio
+Considere causas relacionadas con procesos, tecnología, personas, datos, seguridad y escalabilidad.
+
+3.3 Consecuencias del problema
+Explica las consecuencias directas e indirectas para los propietarios, administradores, empleados y clientes de los minimercados.
+
+3.4 Formulación del problema
+Formula una pregunta central clara, viable y orientada a la solución tecnológica.
+
+La pregunta debe iniciar con “¿Cómo diseñar…” o “¿Cómo desarrollar…” y debe incluir:
+
+Una plataforma SaaS multiinquilino.
+La gestión de operaciones de minimercados.
+La mejora de la eficiencia operativa y la toma de decisiones.
+La protección y separación de los datos de cada inquilino.
+La incorporación responsable de IA, solo si está contemplada en el PDF o resulta pertinente al alcance.
+3.5 Sistematización del problema
+Fórmula entre 4 y 6 preguntas específicas que descompongan el problema central. Deben relacionarse con requisitos, usuarios, seguridad, datos, usabilidad, escalabilidad, riesgos de IA y criterios de evaluación.
+
+4. Justificación
+Justifica el proyecto desde las siguientes perspectivas:
+
+Tecnológica: uso de arquitectura SaaS multi-inquilino, centralización de procesos, escalabilidad, disponibilidad y seguridad.
+Operativa: reducción de tareas manuales, mejora del control del inventario y agilización de operaciones.
+Económico: potencial reducción de pérdidas operativas, mejor control de existencias y apoyo a decisiones comerciales.
+Social: fortalecimiento de pequeños negocios y mejora del servicio al cliente.
+Académica: aplicación de conocimientos de ingeniería de software, gestión de requisitos, seguridad, datos e inteligencia artificial responsable.
+Ética y de privacidad: protección de los datos de cada minimercado, control de accesos, trazabilidad y mitigación de sesgos o riesgos asociados a IA.
+5. Objetivos
+5.1 Objetivo general
+Formula un único objetivo general usando un verbo en infinitivo, que sea medible y coherente con el problema planteado.
+
+5.2 Objetivos específicos
+Fórmula entre 4 y 6 objetivos específicos. Deben incluir, según corresponda:
+
+Levantar y analizar requisitos.
+Definir usuarios y procesos de negocio.
+Diseñar la arquitectura SaaS multi-inquilino.
+Establecer controles de seguridad y aislamiento de datos.
+Diseñar funcionalidades de inventario, ventas, productos, proveedores, usuarios y reportes.
+Identificar y gestionar riesgos de inteligencia artificial mediante NIST AI RMF.
+Definir criterios de éxito y mecanismos de validación.
+6. Usuarios y partes interesadas
+Identifica los usuarios, roles y partes interesadas del proyecto.
+
+Incluye una tabla con estas columnas:
+
+Actor o tipo de usuario
+Rol en la plataforma
+Necesidades principales
+Acciones permitidas
+Información a la que puede acceder
+Riesgos o consideraciones relevantes
+Como mínimo, considere:
+
+Propietario del minimercado.
+Administrador de tienda.
+Cajero o empleado.
+Encargado de inventario.
+Proveedor, si aplica.
+Administrador de la plataforma SaaS.
+Equipo técnico o de soporte.
+Cliente final, únicamente si el alcance contempla interacción directa con él.
+Explica el modelo de roles y permisos. Destaca que cada inquilino o minimercado debe acceder solamente a sus propios datos, usuarios, productos, ventas, informes y configuraciones.
+
+7. Alcance del proyecto
+Defina el alcance del Módulo 1 y del proyecto integrador de forma realista y verificable.
+
+7.1 Alcance funcional incluido
+Incluye funcionalidades priorizadas, tales como:
+
+Registro e inicio de sesión de usuarios.
+Gestión de roles y permisos.
+Creación y administración de inquilinos o minimercados.
+Gestión de productos, categorías y precios.
+Control básico de inventario.
+Registro y consulta de ventas.
+Gestión de proveedores.
+Alertas básicas de inventario bajo, si aplica.
+Informes operativos básicos.
+Panel de administración.
+Aislamiento lógico de los datos por inquilino.
+Registro de auditoría para acciones relevantes.
+Componente de IA limitado, solo si el PDF lo exige o si se define claramente como propuesta futura o prototipo.
+7.2 Alcance no incluido
+Defina exclusiones realistas, por ejemplo:
+
+Integración con facturación electrónica oficial, salvo que el PDF lo exija.
+Integración real con pasarelas de pago.
+Aplicación móvil nativa.
+Integración con hardware POS, lectores de código de barras o impresoras físicas.
+Predicciones financieras avanzadas.
+Automatización total de compras.
+Modelos de IA en producción sin evaluación, monitoreo y controles.
+Implementación para grandes cadenas de supermercados.
+Migración masiva de datos históricos, salvo que el documento base lo especifique.
+7.3 Límites técnicos y organizacionales
+Explica límites relacionados con tiempo, recursos, datos disponibles, seguridad, conectividad, capacitación de usuarios y validación con usuarios reales.
+
+8. Requisitos del sistema
+Organiza los requisitos de forma clara, numerada y verificable.
+
+8.1 Requisitos funcionales
+Redacta al menos 12 requisitos funcionales. Cada requisito debe contener:
+
+Identificador: RF-01, RF-02, etc.
+Nombre del requisito.
+Descripción.
+Prioridad: Alta, Media o Baja.
+Usuario o rol relacionado.
+Criterio de aceptación.
+Asegura requisitos para:
+
+Gestión multi-inquilino.
+Registro, autenticación y recuperación de acceso.
+Gestión de roles.
+Productos.
+Inventario.
+Ventas.
+Proveedores.
+Informes.
+Auditoría.
+Administración de usuarios.
+Separación de datos por inquilino.
+Gestión de alertas.
+8.2 Requisitos no funcionales
+Redacta al menos 10 requisitos no funcionales. Incluye:
+
+Seguridad.
+Privacidad.
+Aislamiento de datos de inquilinos.
+Disponibilidad.
+Rendimiento.
+Escalabilidad.
+Usabilidad.
+Mantenibilidad.
+Trazabilidad.
+Compatibilidad.
+Respaldo y recuperación.
+Cumplimiento de buenas prácticas de protección de datos.
+Para cada requisito no funcional, presenta:
+
+Identificador: RNF-01, RNF-02, etc.
+Categoría.
+Descripción.
+Métrica o condición verificable.
+Prioridad.
+8.3 Requisitos de inteligencia artificial responsable
+Incluye esta sección únicamente si el PDF exige inteligencia artificial, si la solución la incorpora o si se plantea como una funcionalidad futura.
+
+Define requisitos tales como:
+
+Los resultados generados por IA deben ser revisables por un usuario autorizado.
+La IA no debe tomar decisiones financieras o críticas comerciales de manera autónoma.
+Los datos de un inquilino no deben utilizarse para beneficiario o exponer información de otro inquilino sin autorización.
+Debe existir trazabilidad sobre entradas, resultados y decisiones derivadas de sistemas de IA.
+Se deben definir mecanismos para detectar resultados incorrectos, sesgados, inseguros o no pertinentes.
+El uso de IA debe limitarse al propósito definido y comunicado a los usuarios.
+Debe existir un mecanismo para reportar, corregir o desactivar resultados problemáticos.
+9. Matriz de riesgos NIST AI RMF
+Elaborar una matriz de riesgos basada en el marco NIST AI Risk Management Framework (AI RMF). Estructura el análisis según sus cuatro funciones principales:
+
+GOBIERNO: establecer políticas, responsabilidades, cultura de riesgo, supervisión y gobernanza.
+MAPA: identificar el contexto, usuarios, impactos, datos, supuestos y riesgos potenciales.
+MEDIR: evaluar, medir, probar y monitorear riesgos, desempeño, seguridad, confiabilidad y posibles sesgos.
+GESTIONAR: priorizar, responder, mitigar, documentar y monitorear continuamente los riesgos.
+Antes de la matriz, explique brevemente que NIST AI RMF se utiliza como una guía para identificar y gestionar riesgos relacionados con sistemas de inteligencia artificial de forma confiable, segura, transparente y responsable.
+
+Incluye una tabla con un mínimo de 10 riesgos, usando las siguientes columnas:
+
+ID del riesgo.
+Función NIST AI RMF: GOBERNAR, MAPEAR, MEDIR o GESTIONAR.
+Riesgo identificado.
+Descripción del escenario de riesgo.
+Activo, proceso o usuario afectado.
+Probabilidad: Baja, Media o Alta.
+Impacto: Bajo, Medio o Alto.
+Nivel de riesgo: Bajo, Medio, Alto o Crítico.
+Controles preventivos.
+Plan de mitigación o respuesta.
+Responsable.
+Indicador de seguimiento.
+Incluye riesgos pertinentes al proyecto, como:
+
+Acceso no autorizado a información de un inquilino.
+Falla en el aislamiento de datos entre minimercados.
+Uso de datos incompletos, incorrectos o desactualizados.
+Recomendaciones de IA erróneas sobre inventario o ventas.
+Sesgos derivados de datos históricos insuficientes.
+Falta de explicabilidad de recomendaciones automatizadas.
+Dependencia excesiva de sugerencias generadas por IA.
+Filtración de información comercial sensible.
+Ataques a credenciales o cuentas de usuarios.
+Uso de servicios de IA externos sin controles adecuados de privacidad.
+Falta de monitoreo de resultados y desempeño del componente de IA.
+Cambios en datos o comportamiento del negocio que degradan el desempeño de los modelos.
+Ausencia de supervisión humana en decisiones importantes.
+Riesgos de disponibilidad del servicio SaaS.
+Registros de auditoría insuficientes.
+Incluye una escala de valoración de riesgos, con una breve explicación de cómo se determina el nivel de riesgo a partir de probabilidad e impacto.
+
+Aclara que, si el sistema de IA todavía no será implementado en el Módulo 1, la matriz se presenta como un análisis preventivo y una guía de diseño responsable para fases posteriores.
+
+10. Criterios de éxito
+Definir criterios de éxito medibles, verificables y directamente relacionados con los objetivos y requisitos.
+
+Preséntalos en una tabla con las columnas:
+
+IDENTIFICACIÓN.
+Criterio de éxito.
+Indicador.
+Meta esperada.
+Método de verificación.
+Momento de evaluación.
+Incluye criterios relacionados con:
+
+Registro exitoso de minimercados o inquilinos.
+Separación correcta de datos entre inquilinos.
+Gestión de productos e inventario.
+Registro de ventas.
+Control de acceso basado en roles.
+Generación de reportes.
+Usabilidad para usuarios no técnicos.
+Tiempos de respuesta aceptables.
+Trazabilidad de operaciones.
+Identificación y tratamiento de riesgos NIST AI RMF.
+Validación de requisitos con usuarios o casos de prueba.
+No utiliza métricas irreales. Si define valores numéricos, preséntalos como metas iniciales sujetas a validación durante el desarrollo.
+
+11. Supuestos, restricciones y dependencias
+Organiza esta sección en tres subsecciones:
+
+11.1 Supuestos
+Incluye supuestos necesarios para el desarrollo del proyecto, diferenciándolos de hechos comprobados.
+
+11.2 Restricciones
+Incluye restricciones de tiempo, recursos, presupuesto, infraestructura, conectividad, disponibilidad de datos, conocimientos técnicos y alcance académico.
+
+11.3 Dependencias
+Incluye dependencias como disponibilidad de usuarios para pruebas, decisiones institucionales, acceso a infraestructura, herramientas tecnológicas y disponibilidad de información de los minimercados.
+
+12. Conclusiones del Módulo 1
+Redacta entre 3 y 5 conclusiones que sinteticen:
+
+La problemática identificada.
+La pertinencia de la solución SaaS multi-inquilino.
+El valor de definir requisitos desde etapas tempranas.
+La relevancia de proteger los datos de cada negocio.
+La importancia de gestionar preventivamente los riesgos asociados a IA con NIST AI RMF.
+13. Referencias
+Incluye referencias en formato APA 7 únicamente cuando estén presentes en el PDF adjunto o cuando se mencione explícitamente el NIST AI RMF.
+
+Incluye, como mínimo, la referencia institucional del marco NIST AI RMF en formato APA 7, sin inventar fecha o enlace si no puedes verificarlo. Si no puede validar datos bibliográficos completos, utilice una referencia provisional claramente marcada como “pendiente de verificación”.
+
+INSTRUCCIONES DE FORMATO:
+
+Usa títulos y subtítulos numerados.
+Emplea tablas en formato Markdown cuando corresponda.
+Mantén coherencia terminológica: utilice siempre “minimercado”, “inquilino”, “plataforma SaaS multi-inquilino” y “administrador de plataforma” de manera consistente.
+Diferencia claramente las funcionalidades actuales, las funcionalidades futuras y las propuestas condicionadas.
+No describe la inteligencia artificial como sustituto del criterio humano.
+No sugerimos que los datos de un minimercado puedan ser visibles, utilizados o compartidos con otros inquilinos sin autorización.
+No incluye código fuente, diagramas técnicos complejos ni estimaciones de costos, salvo que el PDF lo solicite.
+Si el PDF exige una estructura, número de páginas o formato específico, adáptese a ese requisito.
+Revise la consistencia entre problema, objetivos, alcance, requisitos, riesgos y criterios de éxito antes de entregar la respuesta.
+Entrega el documento completo, no solamente un esquema, y ​​utiliza contenido desarrollado en cada sección.
+Al final, incluye una sección llamada “Validación de coherencia del documento” con una tabla que demuestre la relación entre:
+
+Problema identificado.
+Objetivo general.
+Funcionalidades propuestas.
+Requisitos.
+Riesgos NIST AI RMF.
+Criterios de éxito.
+Antes de comenzar a redactar, analiza el PDF adjunto. Si encuentras información ausente, ambigua o contradictoria, indícalo brevemente en una sección inicial llamada “Observaciones sobre el documento base”, y luego continúa con una propuesta razonable, marcando los supuestos necesarios.
