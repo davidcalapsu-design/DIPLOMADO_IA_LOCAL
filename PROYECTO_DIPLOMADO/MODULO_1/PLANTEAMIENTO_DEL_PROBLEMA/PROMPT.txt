@@ -1,0 +1,151 @@
+# Prompt maestro para Gemini — Módulo 1
+## Plataforma web multi-inquilino para gestión de minimercados (sin suscripción)
+
+```text
+Eres  un ingeniero senior de prompts, analista de negocio, arquitecto de plataformas web multi-inquilino y redactor académico especializado en ingeniería de software e inteligencia artificial responsable.
+
+Elabora el documento formal del Módulo 1 del proyecto integrador descrito en el PDF adjunto. Analiza primero el PDF y usa sus lineamientos, objetivos, rúbrica, entregables, restricciones y estructura. Si hay contradicción, prioriza el PDF. Si falta información, indícalo en “Observaciones sobre el documento base” y continúa con supuestos explícitos y razonables; no inventes datos, cifras, normas o fuentes.
+
+## Contexto obligatorio
+El proyecto es una “Plataforma web multi-inquilino para la gestión integral de minimercados”. Centraliza inventario, productos, ventas, proveedores, usuarios, reportes y procesos administrativos de varios minimercados, manteniendo la separación de los datos de cada negocio.
+
+## Decisión sobre el enfoque
+NO presentes la solución como un servicio comercial SaaS con pagos recurrentes. No incluyas planes, cobro por suscripción, facturación recurrente, tarifas, renovaciones, pasarelas de pago para la plataforma ni módulos de administración de suscripciones.
+
+El enfoque es un prototipo web académico o institucional multi-inquilino. Puede desplegarse en internet para facilitar las pruebas, demostraciones y acceso remoto, pero los minimercados no pagan suscripción por usarlo. Si el PDF usa el término SaaS, aclara que solo describe una arquitectura centralizada y de acceso remoto, no un modelo comercial de cobro.
+
+## Estilo y entrega
+Redacta en español, con tono profesional, técnico, objetivo, impersonal y académico, como un documento de tesis de ingeniería de software. Entrega un documento completo, no un esquema. Usa títulos numerados y tablas Markdown. Mantén consistencia en los términos: “minimercado”, “inquilino”, “plataforma web multi-inquilino” y “administrador de plataforma”.
+
+El documento debe tener las siguientes secciones:
+
+# Portada académica
+Incluye campos editables: [Título], [Estudiante(s)], [Institución], [Programa], [Módulo], [Docente], [Ciudad] y [Fecha].
+
+# Resumen ejecutivo
+Escribe entre 180 y 250 palabras sobre el problema, propuesta, usuarios beneficiados, alcance, valor esperado y el uso responsable de IA si aplica. Incluye de 4 a 6 palabras clave.
+
+# 1. Introducción
+Explica la digitalización de los minimercados y la necesidad de centralizar inventario, ventas, productos, proveedores, usuarios y reportes. Describe por qué una plataforma web multi-inquilino permite atender varios negocios, manteniendo seguridad, aislamiento de datos y escalabilidad técnica, sin plantearla como producto de suscripción.
+
+# 2. Contexto y antecedentes
+Describe la operación con registros manuales, hojas de cálculo, sistemas aislados o herramientas no especializadas. Analiza errores de inventario, pérdidas por faltantes o vencimientos, dificultad para consolidar ventas, baja visibilidad de indicadores, riesgos de acceso no autorizado y dificultades de crecimiento. No incluyas estadísticas sin fuente verificable.
+
+# 3. Planteamiento del problema
+## 3.1 Descripción del problema
+Desarrolla el problema de minimercados pequeños y medianos que necesitan administrar inventario, ventas, productos, proveedores y usuarios de forma eficiente.
+
+## 3.2 Causas del problema
+Incluye una tabla: causa identificada | descripción | consecuencia operativa | consecuencia para el negocio. Considera procesos, personas, tecnología, calidad de datos, seguridad y escalabilidad.
+
+## 3.3 Consecuencias del problema
+Explica consecuencias para propietarios, administradores, empleados y clientes.
+
+## 3.4 Formulación del problema
+Formula una pregunta que comience con “¿Cómo diseñar…” o “¿Cómo desarrollar…?” e incluya una plataforma web multi-inquilino, la eficiencia operativa, la toma de decisiones y la protección y separación de datos de cada minimercado. Incorpora IA únicamente si el PDF la exige o si se declara como futura.
+
+## 3.5 Sistematización del problema
+Formula entre 4 y 6 preguntas específicas sobre usuarios, requisitos, seguridad, datos, usabilidad, escalabilidad, IA responsable y validación.
+
+# 4. Justificación
+Justifica el proyecto desde las perspectivas tecnológica, operativa, económica, social, académica, ética y de privacidad. Destaca el aislamiento entre inquilinos, el control de acceso, la trazabilidad y la supervisión humana de cualquier resultado de IA.
+
+# 5. Objetivos
+## 5.1 Objetivo general
+Formula un objetivo medible, con verbo en infinitivo y coherente con el problema.
+
+## 5.2 Objetivos específicos
+Formula entre 4 y 6 objetivos que contemplen: levantamiento de requisitos; definición de usuarios y procesos; diseño de la arquitectura multi-inquilino; controles de seguridad; funcionalidades de inventario, ventas, proveedores, usuarios y reportes; gestión de riesgos NIST AI RMF; criterios de éxito.
+
+# 6. Usuarios y partes interesadas
+Incluye una tabla: actor | rol | necesidades | acciones permitidas | información accesible | riesgos o consideraciones. Considera propietario, administrador de tienda, cajero o empleado, encargado de inventario, proveedor si aplica, administrador de plataforma, soporte técnico y cliente final solo si el alcance lo contempla.
+
+Explica que cada inquilino accede exclusivamente a sus propios usuarios, productos, ventas, reportes y configuraciones.
+
+# 7. Alcance del proyecto
+## 7.1 Alcance incluido
+Incluye: autenticación; gestión de roles; creación y gestión de minimercados; productos, categorías y precios; inventario básico; ventas; proveedores; alertas básicas; reportes; panel administrativo; aislamiento lógico por inquilino; auditoría; IA limitada solo si es exigida o futura.
+
+## 7.2 Alcance no incluido
+Excluye, salvo exigencia del PDF: facturación electrónica oficial, integración real con pasarelas de pago, app móvil nativa, hardware POS, predicciones financieras avanzadas, automatización total de compras, modelos de IA productivos sin controles, implementación para grandes cadenas, migración masiva de datos y, de forma explícita, cobros por suscripción o planes comerciales de la plataforma.
+
+## 7.3 Límites técnicos y organizacionales
+Explica límites de tiempo, recursos, infraestructura, datos, conectividad, capacitación y validación con usuarios.
+
+# 8. Requisitos del sistema
+## 8.1 Requisitos funcionales
+Elabora al menos 12 requisitos RF-01, RF-02, etc. Cada uno debe contener: nombre, descripción, prioridad, rol relacionado y criterio de aceptación. Cubre inquilinos, autenticación, roles, productos, inventario, ventas, proveedores, reportes, auditoría, administración, aislamiento de datos y alertas.
+
+## 8.2 Requisitos no funcionales
+Elabora al menos 10 requisitos RNF-01, RNF-02, etc. Incluye seguridad, privacidad, aislamiento por inquilino, disponibilidad, rendimiento, escalabilidad, usabilidad, mantenibilidad, trazabilidad, compatibilidad, respaldo y recuperación. Para cada uno indica categoría, descripción, métrica o condición verificable y prioridad.
+
+## 8.3 Requisitos de IA responsable
+Solo si aplica. Incluye supervisión humana, trazabilidad de entradas y resultados, prohibición de decisiones críticas autónomas, privacidad entre inquilinos, detección de resultados erróneos o sesgados, propósito limitado y mecanismo de reporte/corrección.
+
+# 9. Herramientas y tecnologías propuestas
+Propón herramientas fáciles de aprender, gratuitas o con plan gratuito, apropiadas para estudiantes. Presenta una tabla: herramienta | propósito | por qué es fácil o conveniente | alternativa | observaciones.
+
+Recomienda este stack preferente:
+- v0.dev de Vercel: generación rápida de una interfaz inicial y componentes visuales.
+- Next.js: aplicación web con interfaz y rutas del servidor en un solo proyecto.
+- React y TypeScript: componentes reutilizables y tipado para reducir errores.
+- Tailwind CSS y shadcn/ui: diseño responsive y componentes sin crearlos desde cero.
+- Supabase: PostgreSQL, autenticación y servicios de datos integrados.
+- PostgreSQL: almacenamiento relacional de productos, inventario, ventas, usuarios, roles y minimercados.
+- Supabase Auth: registro, inicio de sesión, recuperación de acceso y gestión de sesiones.
+- Row Level Security (RLS): políticas para aislar los datos de cada inquilino.
+- GitHub: control de versiones y respaldo del código.
+- Vercel: despliegue de demostración si se requiere acceso remoto.
+- Figma: opcional, para prototipos de interfaz.
+- Postman o Insomnia: opcional, para probar endpoints y operaciones de datos.
+- Visual Studio Code: editor principal recomendado.
+
+Aclara que v0.dev, Vercel y Supabase pueden emplearse con planes gratuitos para fines académicos y pruebas. Esto NO significa que la plataforma cobre una suscripción a los minimercados. Si se requiere instalación local, propone Visual Studio Code, Node.js, PostgreSQL y Docker como alternativa.
+
+Establece estos lineamientos técnicos:
+- Usar variables de entorno para claves y credenciales.
+- No exponer claves administrativas en frontend ni repositorios públicos.
+- Incluir `tenant_id` o `minimercado_id` en las entidades que pertenezcan a un negocio.
+- Aplicar RLS a las operaciones de lectura, creación, edición y eliminación.
+- Validar que dos inquilinos de prueba no puedan consultar ni modificar datos entre sí.
+- Mantener IA como componente opcional, supervisado y no esencial para la operación básica.
+
+# 10. Matriz de riesgos NIST AI RMF
+Explica brevemente que NIST AI RMF es una guía voluntaria para gestionar riesgos de IA de manera confiable, segura, transparente y responsable. Organiza la matriz con las funciones GOVERN, MAP, MEASURE y MANAGE.
+
+Incluye mínimo 10 riesgos y una tabla con: ID | función NIST | riesgo | escenario | activo/proceso/usuario afectado | probabilidad | impacto | nivel | controles preventivos | mitigación o respuesta | responsable | indicador de seguimiento.
+
+Incluye como mínimo: acceso no autorizado, falla de aislamiento de datos, datos incompletos, recomendaciones erróneas, sesgos, falta de explicabilidad, dependencia excesiva de IA, filtración de datos comerciales, ataques a credenciales, uso inseguro de IA externa, falta de monitoreo, degradación del modelo, ausencia de supervisión humana, indisponibilidad de la plataforma y auditoría insuficiente.
+
+Incluye la escala para determinar nivel de riesgo mediante probabilidad e impacto. Si la IA no se implementa en Módulo 1, explica que la matriz es preventiva y orienta fases futuras.
+
+# 11. Criterios de éxito
+Incluye una tabla: ID | criterio | indicador | meta esperada | método de verificación | momento de evaluación. Define criterios verificables para creación de inquilinos, aislamiento de datos, productos e inventario, ventas, acceso por rol, reportes, usabilidad, tiempos de respuesta, auditoría, gestión de riesgos AI RMF y casos de prueba. Las cifras deben ser metas iniciales sujetas a validación.
+
+# 12. Supuestos, restricciones y dependencias
+Diferencia claramente supuestos, restricciones y dependencias. Considera disponibilidad de usuarios, infraestructura, herramientas, datos, tiempo, recursos, presupuesto, conectividad, capacidades técnicas y acceso a entornos de prueba.
+
+# 13. Conclusiones del Módulo 1
+Redacta entre 3 y 5 conclusiones sobre la problemática, pertinencia de la plataforma web multi-inquilino, importancia de requisitos tempranos, protección de datos y gestión preventiva de riesgos de IA.
+
+# 14. Referencias
+Usa APA 7 solo para fuentes incluidas en el PDF o verificables. Incluye la referencia institucional NIST AI RMF si puedes validarla. Si un dato bibliográfico no puede verificarse, indícalo como pendiente de verificación; no lo inventes.
+
+# Validación de coherencia del documento
+Finaliza con una tabla que vincule: problema identificado | objetivo general | funcionalidades | requisitos | riesgos NIST AI RMF | criterios de éxito.
+
+Antes de entregar, verifica que problema, objetivos, alcance, requisitos, herramientas, riesgos y criterios de éxito no se contradigan. No incluyas código fuente, diagramas complejos ni costos, salvo exigencia explícita del PDF.
+```
+
+## Nota de uso
+
+1. Adjunta el PDF del proyecto en Gemini.
+2. Pega el bloque completo del prompt.
+3. Si Gemini se detiene por límite de extensión, solicita que continúe desde la sección pendiente sin modificar la estructura.
+4. Reemplaza los campos entre corchetes de la portada antes de entregar.
+
+## Fundamento de la selección técnica
+
+La propuesta prioriza herramientas con curva de aprendizaje favorable: v0.dev para acelerar la interfaz, Next.js/React/TypeScript para el desarrollo web, y Supabase con PostgreSQL para datos y autenticación. El control de acceso por filas (RLS) resulta especialmente relevante para una solución multi-inquilino, porque permite restringir las filas a las que cada usuario puede acceder; Supabase recomienda habilitar RLS en las tablas expuestas y definir políticas por operación. [web:13][web:14]
+
+La matriz de riesgos conserva NIST AI RMF como marco preventivo. NIST describe AI RMF como un recurso voluntario para incorporar consideraciones de confiabilidad en el diseño, desarrollo, uso y evaluación de sistemas de IA. [web:5][web:9]
