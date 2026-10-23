@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Minimercados{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Gestión de minimercados (tenants)</h2>
+  <div class="toolbar">
+    <input id="tenantId" value="a0000000-0000-0000-0000-000000000001" />
+    <button class="btn" onclick="loadTenants()">Listar minimercados</button>
+  </div>
+  <ul id="tenants"></ul>
+</section>
+<script>
+const API = "{{ api }}";
+async function loadTenants() {
+  const res = await fetch(`${API}/api/tenants/`);
+  const data = await res.json();
+  const ul = document.getElementById('tenants');
+  ul.innerHTML = '';
+  data.forEach(t => { const li = document.createElement('li'); li.textContent = `${t.name} (${t.city}) — ${t.slug}`; ul.appendChild(li); });
+}
+loadTenants();
+</script>
+{% endblock %}

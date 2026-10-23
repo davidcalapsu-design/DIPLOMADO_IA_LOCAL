@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Reportes{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Reportes operativos</h2>
+  <div class="toolbar">
+    <input id="tenantId" value="a0000000-0000-0000-0000-000000000001" />
+    <button class="btn" onclick="loadMetrics()">Cargar métricas</button>
+  </div>
+  <pre id="metrics"></pre>
+  <h3>Historial de ventas</h3>
+  <button class="btn" onclick="loadSales()">Cargar ventas</button>
+  <ul id="sales"></ul>
+</section>
+<script>
+const API = "{{ api }}";
+async function loadMetrics() {
+  const tenant = document.getElementById('tenantId').value;
+  const res = await fetch(`${API}/api/dashboard/metrics?tenant_id=${tenant}`);
+  document.getElementById('metrics').textContent = JSON.stringify(await res.json(), null, 2);
+}
+async function loadSales() {
+  const tenant = document.getElementById('tenantId').value;
+  const res = await fetch(`${API}/api/sales/history?tenant_id=${tenant}`);
+  const data = await res.json();
+  const ul = document.getElementById('sales');
+  ul.innerHTML = '';
+  data.forEach(s => { const li = document.createElement('li'); li.textContent = `${s.sale_number} — ${s.customer_name} — total: ${s.total}`; ul.appendChild(li); });
+}
+</script>
+{% endblock %}

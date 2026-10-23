@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Inventario{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Inventario y Kardex</h2>
+  <div class="toolbar">
+    <input id="tenantId" value="a0000000-0000-0000-0000-000000000001" />
+    <button class="btn" onclick="loadLowStock()">Ver stock bajo</button>
+  </div>
+  <h3>Productos con stock bajo</h3>
+  <ul id="lowStock"></ul>
+</section>
+<script>
+const API = "{{ api }}";
+async function loadLowStock() {
+  const tenant = document.getElementById('tenantId').value;
+  const res = await fetch(`${API}/api/inventory/low-stock?tenant_id=${tenant}`);
+  const data = await res.json();
+  const ul = document.getElementById('lowStock');
+  ul.innerHTML = '';
+  data.forEach(p => {
+    const li = document.createElement('li');
+    li.textContent = `${p.name} — stock: ${p.current_stock} (mín: ${p.min_stock})`;
+    ul.appendChild(li);
+  });
+  if (data.length === 0) ul.innerHTML = '<li>Sin alertas de stock bajo 🎉</li>';
+}
+loadLowStock();
+</script>
+{% endblock %}

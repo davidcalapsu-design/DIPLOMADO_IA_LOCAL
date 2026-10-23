@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ brand }} — {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">{{ brand }}</div>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/productos">Productos</a>
+        <a href="/inventario">Inventario</a>
+        <a href="/ventas">Ventas (POS)</a>
+        <a href="/reportes">Reportes</a>
+        <a href="/usuarios">Usuarios</a>
+        <a href="/minimercados">Minimercados</a>
+        <a href="/superadmin">Superadmin</a>
+        <a href="/asistente-ia">Asistente IA</a>
+        <a href="/login">Salir</a>
+      </nav>
+    </aside>
+    <main class="content">
+      <header class="topbar"><h1>{% block title %}{% endblock %}</h1></header>
+      <div class="container">
+        {% block content %}{% endblock %}
+      </div>
+    </main>
+  </div>
+</body>
+</html>

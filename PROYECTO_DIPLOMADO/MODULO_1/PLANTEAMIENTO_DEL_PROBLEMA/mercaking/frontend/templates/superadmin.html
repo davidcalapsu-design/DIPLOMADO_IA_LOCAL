@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Superadmin{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Panel Superadmin — MercaKing</h2>
+  <button class="btn" onclick="loadStats()">Cargar estadísticas globales</button>
+  <pre id="stats"></pre>
+  <h3>Minimercados (tenants)</h3>
+  <button class="btn" onclick="loadTenants()">Listar todos</button>
+  <ul id="tenants"></ul>
+  <h3>Logs de auditoría</h3>
+  <button class="btn" onclick="loadLogs()">Cargar logs</button>
+  <ul id="logs"></ul>
+</section>
+<script>
+const API = "{{ api }}";
+async function loadStats() {
+  const res = await fetch(`${API}/api/superadmin/stats`);
+  document.getElementById('stats').textContent = JSON.stringify(await res.json(), null, 2);
+}
+async function loadTenants() {
+  const res = await fetch(`${API}/api/superadmin/tenants`);
+  const data = await res.json();
+  const ul = document.getElementById('tenants');
+  ul.innerHTML = '';
+  data.forEach(t => { const li = document.createElement('li'); li.textContent = `${t.name} (${t.city}) — productos: ${t.products}, ventas: ${t.sales}, activo: ${t.is_active}`; ul.appendChild(li); });
+}
+async function loadLogs() {
+  const res = await fetch(`${API}/api/superadmin/audit-logs?limit=30`);
+  const data = await res.json();
+  const ul = document.getElementById('logs');
+  ul.innerHTML = '';
+  data.forEach(l => { const li = document.createElement('li'); li.textContent = `${l.created_at} — ${l.action} (${l.entity})`; ul.appendChild(li); });
+}
+</script>
+{% endblock %}

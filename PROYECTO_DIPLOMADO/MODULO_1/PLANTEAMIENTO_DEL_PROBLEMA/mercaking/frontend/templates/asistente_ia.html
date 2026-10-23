@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Asistente IA{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Asistente IA — MercaKing</h2>
+  <p class="muted">Consulta en lenguaje natural sobre tu inventario, productos, proveedores y ventas. (IA local: Ollama si está disponible; si no, modo reglas.)</p>
+  <div class="toolbar">
+    <input id="tenantId" value="a0000000-0000-0000-0000-000000000001" />
+  </div>
+  <div class="chat">
+    <div id="messages" class="messages"></div>
+    <div class="chat-input">
+      <input id="q" placeholder="Ej: ¿qué productos tienen stock bajo?" />
+      <button class="btn primary" onclick="send()">Enviar</button>
+    </div>
+  </div>
+  <p class="muted" id="status"></p>
+</section>
+<script>
+const API = "{{ api }}";
+function addMsg(role, text) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + role;
+  div.textContent = text;
+  document.getElementById('messages').appendChild(div);
+}
+async function send() {
+  const q = document.getElementById('q').value.trim();
+  if (!q) return;
+  addMsg('user', q);
+  document.getElementById('q').value = '';
+  const tenant = document.getElementById('tenantId').value;
+  const res = await fetch(`${API}/api/ai/chat`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ tenant_id: tenant, question: q })
+  });
+  const data = await res.json();
+  addMsg('assistant', data.answer || JSON.stringify(data));
+  document.getElementById('status').textContent = data.used_llm ? 'Respondido con IA local (Ollama)' : 'Modo reglas (Ollama no disponible)';
+}
+</script>
+{% endblock %}

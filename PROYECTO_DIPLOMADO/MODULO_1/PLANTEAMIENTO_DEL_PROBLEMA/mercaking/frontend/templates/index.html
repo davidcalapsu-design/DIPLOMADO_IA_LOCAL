@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Bienvenido a {{ brand }}</h1>
+  <p>Plataforma SaaS multi-inquilino para la gestión integral de minimercados: inventarios, ventas (POS), proveedores y reportes, con IA local.</p>
+  <div class="actions">
+    <a class="btn primary" href="/login">Iniciar sesión</a>
+    <a class="btn" href="#planes">Ver planes</a>
+  </div>
+</section>
+
+<section id="planes" class="planes">
+  <h2>Planes de suscripción</h2>
+  <div class="plan-grid">
+    <div class="plan">
+      <h3>Emprendedor</h3>
+      <p class="price">$39.000 COP/mes</p>
+      <ul>
+        <li>1 minimarket</li>
+        <li>Hasta 2 cajeros</li>
+        <li>POS ultrarrápido</li>
+        <li>Alertas de stock</li>
+      </ul>
+    </div>
+    <div class="plan recommended">
+      <h3>Minimarket Pro</h3>
+      <p class="price">$79.000 COP/mes</p>
+      <ul>
+        <li>Cajeros ilimitados</li>
+        <li>Kardex de inventario</li>
+        <li>Reportes y márgenes</li>
+        <li>Soporte prioritario</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>Red de Tiendas</h3>
+      <p class="price">$149.000 COP/mes</p>
+      <ul>
+        <li>Hasta 5 minimarkets</li>
+        <li>Inventario centralizado</li>
+        <li>Reportes comparativos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

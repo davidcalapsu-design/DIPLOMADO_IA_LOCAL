@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Ventas (POS){% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Punto de Venta (POS)</h2>
+  <p class="muted">Carga productos y registra una venta. (Demo: tenant por defecto)</p>
+  <div class="toolbar">
+    <input id="tenantId" value="a0000000-0000-0000-0000-000000000001" />
+    <input id="productId" placeholder="ID producto" />
+    <input id="qty" type="number" placeholder="Cantidad" value="1" />
+    <input id="price" type="number" placeholder="Precio unitario" />
+    <button class="btn primary" onclick="addItem()">Agregar</button>
+  </div>
+  <table class="table" id="cart">
+    <thead><tr><th>Producto</th><th>Cant.</th><th>Precio</th><th>Subtotal</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  <div class="toolbar">
+    <input id="paid" type="number" placeholder="Monto pagado" />
+    <button class="btn primary" onclick="checkout()">Cobrar</button>
+  </div>
+  <pre id="result"></pre>
+</section>
+<script>
+const API = "{{ api }}";
+const cart = [];
+function addItem() {
+  cart.push({ product_id: document.getElementById('productId').value, quantity: parseFloat(document.getElementById('qty').value), unit_price: parseFloat(document.getElementById('price').value) });
+  renderCart();
+}
+function renderCart() {
+  const tbody = document.querySelector('#cart tbody');
+  tbody.innerHTML = '';
+  cart.forEach((it, i) => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${it.product_id}</td><td>${it.quantity}</td><td>${it.unit_price}</td><td>${(it.quantity*it.unit_price).toFixed(2)}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+async function checkout() {
+  const tenant = document.getElementById('tenantId').value;
+  const paid = parseFloat(document.getElementById('paid').value || '0');
+  const res = await fetch(`${API}/api/sales/`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ tenant_id: tenant, payment_method: 'cash', amount_paid: paid, items: cart })
+  });
+  const data = await res.json();
+  document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+  cart.length = 0;
+  renderCart();
+}
+</script>
+{% endblock %}

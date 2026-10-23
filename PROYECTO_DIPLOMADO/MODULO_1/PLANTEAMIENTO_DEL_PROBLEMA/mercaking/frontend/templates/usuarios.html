@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Usuarios{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Usuarios y permisos</h2>
+  <p>Gestión de usuarios internos (cajeros, encargados, administradores).</p>
+  <table class="table">
+    <thead><tr><th>Rol</th><th>Descripción</th></tr></thead>
+    <tbody>
+      <tr><td>platform_admin</td><td>Superadmin de la plataforma MercaKing</td></tr>
+      <tr><td>store_owner</td><td>Propietario del minimercado (acceso total)</td></tr>
+      <tr><td>store_admin</td><td>Administrador de tienda</td></tr>
+      <tr><td>cashier</td><td>Cajero (solo POS)</td></tr>
+      <tr><td>inventory_manager</td><td>Encargado de inventario</td></tr>
+    </tbody>
+  </table>
+  <p class="muted">CRUD de usuarios: endpoint <code>/api/auth/register</code>.</p>
+</section>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<section class="card">
+  <h2>Dashboard — {{ brand }}</h2>
+  <div class="toolbar">
+    <input id="tenantId" value="a0000000-0000-0000-0000-000000000001" />
+    <button class="btn" onclick="loadMetrics()">Cargar métricas</button>
+  </div>
+  <div id="metrics" class="metrics-grid"></div>
+</section>
+<script>
+const API = "{{ api }}";
+async function loadMetrics() {
+  const tenant = document.getElementById('tenantId').value;
+  const res = await fetch(`${API}/api/dashboard/metrics?tenant_id=${tenant}`);
+  const m = await res.json();
+  const div = document.getElementById('metrics');
+  div.innerHTML = `
+    <div class="metric"><span>Productos activos</span><strong>${m.active_products}</strong></div>
+    <div class="metric"><span>Ventas hoy</span><strong>${m.today_sales_total}</strong></div>
+    <div class="metric"><span># Ventas hoy</span><strong>${m.today_sales_count}</strong></div>
+    <div class="metric"><span>Stock bajo</span><strong>${m.low_stock_count}</strong></div>
+    <div class="metric"><span>Proveedores</span><strong>${m.suppliers_count}</strong></div>
+  `;
+}
+loadMetrics();
+</script>
+{% endblock %}
